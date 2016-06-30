@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 16: end of line expected.
-    show text(ypos=-100) "Made with" at 
-                         ^
+File "game/script.rpy", line 10: invalid syntax
+    Character('Notiz', color"#FF0000")
+                                     ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227
