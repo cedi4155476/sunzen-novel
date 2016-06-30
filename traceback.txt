@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 181, in script call
+    call expression "splashscreen" from _call_splashscreen_1
+  File "game/script.rpy", line 16, in script
+    show text "Made with" at halfsize, center
+  File "game/script.rpy", line 16, in <module>
+    show text "Made with" at halfsize, center
+NameError: name 'halfsize' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 181, in script call
+    call expression "splashscreen" from _call_splashscreen_1
+  File "game/script.rpy", line 16, in script
+    show text "Made with" at halfsize, center
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\ast.py", line 1065, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\ast.py", line 1026, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 16, in <module>
+    show text "Made with" at halfsize, center
+NameError: name 'halfsize' is not defined
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.10.1227
+Konzeptspiel Sunzen 0.0
