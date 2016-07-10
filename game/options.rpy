@@ -40,8 +40,8 @@ init -1 python hide:
     ## Die Theme-Funktion läuft mit verschiedenen Parametern, die
     ## das Farbschema anpassen können.
 
-    theme.marker(
-        ## Theme: Marker
+    theme.austen(
+        ## Theme: Austen
         ## Color scheme: Colorblind
 
         ## The color of an idle widget face.
@@ -81,7 +81,7 @@ init -1 python hide:
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
-        rounded_window = True,
+        rounded_window = False,
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
@@ -208,10 +208,10 @@ init -1 python hide:
     ## Übergänge.
 
     ## Beim Aufrufen des Spielmenüs aus dem Spiel heraus.
-    config.enter_transition = None
+    config.enter_transition = dissolve
 
     ## Beim Verlassen des Spielmenüs zurück ins Spiel.
-    config.exit_transition = None
+    config.exit_transition = dissolve
 
     ## Beim Wechsel zwischen Menüs im Spielmenü.
     config.intra_transition = None
@@ -285,7 +285,7 @@ init -1 python hide:
 
     config.default_afm_time = 10
     
-    # This is the main menu image we use.
+    # Hauptmenühintergrund.
 image main_menu:
     contains:
         "#000"

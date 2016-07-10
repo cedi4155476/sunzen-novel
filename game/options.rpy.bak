@@ -23,11 +23,11 @@ init -1 python hide:
     ## Hiermit wird der Titel des Fensters festgelegt, wenn Ren'Py im
     ## Fenstermodus läuft.
 
-    config.window_title = u"Ein Ren'Py Spiel"
+    config.window_title = "Konzeptspiel Sunzen"
 
     # Hiermit wird der Name und die Version des Spiels festgelegt,
     # die in Tracebacks und anderen Protokollen festgehalten werden.
-    config.name = "Ein Ren'Py Spiel"
+    config.name = "Konzeptspiel Sunzen"
     config.version = "0.0"
 
     #########################################
@@ -40,50 +40,52 @@ init -1 python hide:
     ## Die Theme-Funktion läuft mit verschiedenen Parametern, die
     ## das Farbschema anpassen können.
 
-    theme.roundrect(
+    theme.marker(
+        ## Theme: Marker
+        ## Color scheme: Colorblind
 
-        ## Die Farbe von einer Widget-Oberfläche.
-        widget = "#003c78",
+        ## The color of an idle widget face.
+        widget = "#898989",
 
-        ## Die Farbe von einer ausgewählter Widget-Oberfläche.
-        widget_hover = "#0050a0",
+        ## The color of a focused widget face.
+        widget_hover = "#464646",
 
-        ## Die Farbe vom Text in einem Widget.
-        widget_text = "#c8ffff",
+        ## The color of the text in a widget.
+        widget_text = "#CCCCCC",
 
-        ## Die Farbe vom Text in einem ausgewählten Widget. (Zum
-        ## Beispiel der derzeitige Wert einer Einstellung.)
-        widget_selected = "#ffffc8",
+        ## The color of the text in a selected widget. (For
+        ## example, the current value of a preference.)
+        widget_selected = "#F2F2F2",
 
-        ## Die Farbe von einer deaktivierten Widget-Oberfläche.
-        disabled = "#404040",
+        ## The color of a disabled widget face.
+        disabled = "#898989",
 
-        ## Die Farbe eines deaktivierten Widget-Texts.
-        disabled_text = "#c8c8c8",
+        ## The color of disabled widget text.
+        disabled_text = "#666666",
 
-        ## Die Farbe von Informations-Labels.
-        label = "#ffffff",
+        ## The color of informational labels.
+        label = "#c2c2c2",
 
-        ## Die Farbe von einer Schaltfläche, die Widgets enthält.
-        frame = "#6496c8",
+        ## The color of a frame containing widgets.
+        frame = "#252525",
 
-        ## Wenn dies auf "True" steht, ist das Fenster im Spiel abgerundet.
-        ## Wenn es auf "False" steht, ist das Fenster im Spiel rechteckig.
-        rounded_window = False,
+        ## The background of the main menu. This can be a color
+        ## beginning with '#', or an image filename. The latter
+        ## should take up the full height and width of the screen.
+        mm_root = "main_menu",
 
-        ## Der Hintergrund des Hauptmenüs. Das kann eine Farbe sein,
-        ## die mit '#' beginnt oder ein Dateiname. Letzteres sollte
-        ## sich auf die vollständige Höhe und Breite des Bildschirms erstrecken.
-        mm_root = "#dcebff",
+        ## The background of the game menu. This can be a color
+        ## beginning with '#', or an image filename. The latter
+        ## should take up the full height and width of the screen.
+        gm_root = "#393939",
 
-        ## Der Hintergrund des Spielmenüs. Das kann eine Farbe sein,
-        ## die mit '#' beginnt oder ein Dateiname. Letzteres sollte
-        ## sich auf die vollständige Höhe und Breite des Bildschirms erstrecken.
-        gm_root = "#dcebff",
+        ## If this is True, the in-game window is rounded. If False,
+        ## the in-game window is square.
+        rounded_window = True,
 
-        ## Und das war alles zum Theme. Das Theme kann durch verschiedene
-        ## Stile weiter angepasst werden. Wenn wir dies ändern möchten,
-        ## können wir das weiter unten tun.
+        ## And we're done with the theme. The theme will customize
+        ## various styles, so if we want to change them, we should
+        ## do so below.
         )
 
 
@@ -282,6 +284,23 @@ init -1 python hide:
     ## Die Standardzeit für den automatischen Vorlauf.
 
     config.default_afm_time = 10
+    
+    # This is the main menu image we use.
+image main_menu:
+    contains:
+        "#000"
+
+    contains:
+        "Menu_BGI_snzn.png"
+    contains:
+        "Sunzenlogo.png"
+        ypos -100
+
+    contains:
+        Text("Konzeptspiel v. " + config.version, size=18)
+        yalign .98
+        xalign .02
+
 
     #########################################
     ## Weitere Anpassungen können hier eingefügt werden.
