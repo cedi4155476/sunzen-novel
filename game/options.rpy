@@ -291,15 +291,15 @@ image main_menu:
         "#000"
 
     contains:
-        "Menu_BGI_snzn.png"
+        "Herrenhaus_snzn.png"
     contains:
-        "Sunzenlogo.png"
-        ypos -100
-
+        "Schwert.png"
     contains:
-        Text("Konzeptspiel v. " + config.version, size=18)
-        yalign .98
-        xalign .02
+        "Titel.png"
+    contains:
+        Text("Konzeptspiel v." + config.version, size=18)
+        yalign .02
+        xalign .98
 
 
     #########################################
