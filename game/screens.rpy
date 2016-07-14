@@ -184,8 +184,8 @@ screen main_menu:
     # Die Hauptmenü Schaltflächen.
     frame:
         style_group "mm"
-        xalign .12
-        yalign .75
+        xalign .06
+        yalign .85
 
         has vbox
 
@@ -199,7 +199,7 @@ init -2 python:
 
     # Macht alle Hauptmenü Schaltflächen gleich groß.
     style.mm_button.size_group = "mm"
-
+    style.mm_button_text.size = 40
 
 ##############################################################################
 # Navigation
