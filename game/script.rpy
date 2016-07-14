@@ -7,7 +7,11 @@ image gnm = "Gaanmalogo.png"
 
 # Bestimmen Sie Charaktere, die in diesem Spiel verwendet werden.
 define M = Character('Max Lenster', color="#c8ffc8")
+
+##Notiz-Charakter
 define n = Character('Notiz', color="#FF0000")
+##
+
 
 # Hier beginnt das Spiel.
 
