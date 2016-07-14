@@ -10,24 +10,10 @@ screen say:
 
     # Standard für side_image und two_window
     default side_image = None
-    default two_window = False
+    default two_window = True
 
     # Entscheidung, ob wir die Variante für ein Fenster oder für zwei Fenster verwenden möchten.
     if not two_window:
-
-        # Die Variante für ein Fenster.
-        window:
-            id "window"
-
-            has vbox:
-                style "say_vbox"
-
-            if who:
-                text who id "who"
-
-            text what id "what"
-
-    else:
 
         # Die Variante für zwei Fenster.
         vbox:
@@ -47,6 +33,20 @@ screen say:
                     style "say_vbox"
 
                 text what id "what"
+
+    else:
+
+        # Die Variante für ein Fenster.
+        window:
+            id "window"
+
+            has vbox:
+                style "say_vbox"
+
+            if who:
+                text who id "who"
+
+            text what id "what"
 
     # Wenn ein "side image" vorhanden ist, wird es über dem Text angezeigt.
     if side_image:

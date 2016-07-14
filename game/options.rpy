@@ -110,10 +110,10 @@ init -1 python hide:
     ## "Padding" ist der Raum innerhalb des Fenster, wo der
     ## Hintergrund zu sehen ist.
 
-    # style.window.left_padding = 6
-    # style.window.right_padding = 6
-    # style.window.top_padding = 6
-    # style.window.bottom_padding = 6
+    style.window.left_padding = 30
+    style.window.right_padding = 30
+    style.window.top_padding = 30
+    style.window.bottom_padding = 30
 
     ## Dies ist die Mindesthöhe des Fensters, inklusive des Randes
     ## und "Padding".
