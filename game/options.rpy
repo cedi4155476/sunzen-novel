@@ -146,7 +146,7 @@ init -1 python hide:
 
     ## Die Datei, die die Standard-Schriftart enthält.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "Skranji-Regular.ttf"
 
     ## Die Standardgröße des Texts.
 
