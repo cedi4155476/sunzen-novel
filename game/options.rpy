@@ -45,17 +45,17 @@ init -1 python hide:
         ## Color scheme: Colorblind
 
         ## The color of an idle widget face.
-        widget = "#898989",
+        widget = "#2E4372",
 
         ## The color of a focused widget face.
-        widget_hover = "#464646",
+        widget_hover = "#00287F",
 
         ## The color of the text in a widget.
         widget_text = "#CCCCCC",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
-        widget_selected = "#F2F2F2",
+        widget_selected = "#656565",
 
         ## The color of a disabled widget face.
         disabled = "#898989",
@@ -67,7 +67,7 @@ init -1 python hide:
         label = "#c2c2c2",
 
         ## The color of a frame containing widgets.
-        frame = "#252525",
+        frame = "#001D5B",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
