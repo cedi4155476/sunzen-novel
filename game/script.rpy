@@ -6,11 +6,14 @@ image renpy = "Ren'Py.png"
 image gnm = "Gaanmalogo.png"
 
 # Bestimmen Sie Charaktere, die in diesem Spiel verwendet werden.
-define M = Character('Max Lenster', color="#c8ffc8")
 
-##Notiz-Charakter
-define n = Character('Notiz', color="#FF0000")
-##
+##Haupt-Charaktere
+define M = Character('Max Lenster', color="#c8ffc8")
+define Haupt = Character(' ', color="#cccccc")
+define R = Character('Riolf Nartrod', color="#cccccc")
+
+##Andere
+define U = Character('???', color="cccccc")
 
 
 # Hier beginnt das Spiel.
@@ -54,16 +57,41 @@ label splashscreen:
 
 label start:
     
-    "Ich ging mit Max wieder einmal nach Flencia um Kleider zu kaufen."
-    "Es war die Hauptstadt von Loeda und konnte so ziemlich alles bieten, was man braucht."
-    "Es war wie jedes andere Mal. "
-    n"Hier bitte Dialogue denken!"
-    "Danach gingen wir in das Café „Fliegender Drache“ und gönnten uns ein erfrischendes Eis."
-    "Ich nahm wie immer mein Lieblingseis. Das Kleins-di-Vanilla."
-    "Es war ein Vanille-Eis mit Schoko Splitter und einer speziellen Glasur oben drauf. Die meisten, die ich kannte, mochten diese Glasur überhaupt nicht. Ich jedoch war beinahe ein exzentrischer Fan davon."
-    n"Hier bitte wieder Dialogue denken!"
-    "Ich persönlich fand es immer höchst amüsant, wenn er über seine Eltern sprach. Man konnte ihm richtig ansehen, dass sie ihm peinlich waren. Ich hab ihn auch damit immer wieder aufgezogen."
-    "Im Gegenzug nervte er mich immer wieder mit meinem Essgeschmack und auch Kleidungstil. Obwohl er beim zweiten schon vergeblich versuchte, etwas daran zu ändern."
-    "Wir gingen nach dem verspeisen der  Eisbecher zur Spielautomaten-Abteilung."
-    n"Also, die Paar Zeilen hier sind nur zum füllen gedacht. Wir müssen hier eindeutig ein script verfassen an dem wir uns entlang hangeln können. Direkt aus dem Text heraus ginge auch, ist nur recht unausgereift ^^"
+    ##Einkaufszentrum Flencia
+    M"Sieht doch schon besser aus!"
+    Haupt"Aber meine alten Sachen reichen doch aus."
+    M"Nein tun sie nicht. Du schaffst es nur knapp durch die Woche mit deiner Kleidung. Schonmal was von Ersatzwäsche gehört?"
+    Haupt"Wie oft wollen wir dieses Thema eigentlich noch ansprechen?"
+    M"Du hast doch damit angefangen!"
+    Haupt"Aber du hast weitergemacht!"
+    M"Denkst du ans gleiche wie ich?"
+    Haupt"Natürlich"
+    "Ohne noch genaueres zu bereden gingen wir zum Cafe 'Fliegender Drache'."
+    ##Szenenwechsel Cafe Fliegender Drache
+    Haupt"Ein Kleins-di-Vanilla gerne."
+    M"Ugh... Für mich gerne ein normales Vanille Eis."
+    "Der Kellner nahm die Bestellung entgegen und verliess uns wieder."
+    M"Wie kannst du das nur essen. Da kannst du gleich ne Eisenstange essen."
+    Haupt"Ach was, das sind doch bestimmt viele verschiedene Früchte drinnen, aber sicher kein Eisen."
+    "Es gab ein grosses Rätsel in diesem Cafe. Nämlich was für Zutaten sich im Kleins-di-Vanilla befinden. Nur der Koch selber weiss darüber bescheid."
+    "90 der Leute behaupten, es schmecke so, als würde man eine Eisenstange essen. Die anderen 10 finden es fruchtig und erfrischend."
+    M"Meine Eltern haben es mal wieder geschafft."
+    Haupt"Haben sie schon wieder die Einrichtung geändert?"
+    M"JA! Diesmal ist sogar aus dem oberen Stockwerk ein Garten entstanden, dafür ist nun im ehemaligen Garten die Küche. Wie schaffen die das immer?"
+    Haupt"Na dann wünsch ich viel spass, wenn es regnet."
+    M"Na danke Mister 'ich werde von den Leuten ausgelacht, weil ich keine Ahnung hab, was man sich anziehen soll'"
+    Haupt"Das nimmst du zurück!"
+    M"Als ob!"
+    "Wir blickten uns gegenseitig an, als würden Blitze zwischen uns existieren und gingen dann Richtung Spielhalle."
+    ##Szenenwechsel Spielhalle Flencia
+    M"Diesesmal gewinne ich!"
+    Haupt"Als ob!"
+    "Leider verlor ich trotz des Angebens..."
+    "Es wurde langsam spät."
+    Haupt"Ich brauch noch Geld fürs Abendessen."
+    M"Na dann ab zur Kito Bank."
+    ##Szenenwechsel Grosstadt
+    "Wie jedesmal, wenn wir zur Kito Bank gingen, machten wir ein Wettrennen."
+    "Es war Hochsommer, weswegen uns nach einer kurzen Zeit bereits beiden die Puste ausging."
+    "Wir entschieden uns für ein Unentschieden und gingen gemütlich weiter."
     return

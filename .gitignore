@@ -5,3 +5,5 @@ tmp/
 game/saves/
 
 game/cache/
+
+errors.txt

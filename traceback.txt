@@ -1,28 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 404, in <module>
-    renpy.rename_save("_reload-1", "_reload-2")
-WindowsError: [Error 32] Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird
+  File "renpy/common/00start.rpy", line 218, in script call
+    python:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "game/script.rpy", line 77, in script
+    "90% der Leute behaupten, es schmecke so, als würde man eine Eisenstange essen. Die anderen 10% finden es fruchtig und erfrischend."
+TypeError: %d format: a number is required, not TagQuotingDict
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "lib/windows-i686/00start.rpyc", line 160, in script call
-  File "lib/windows-i686/00keymap.rpyc", line 403, in script
-  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\ast.py", line 806, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\python.py", line 1577, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 404, in <module>
-    renpy.rename_save("_reload-1", "_reload-2")
-  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\loadsave.py", line 607, in rename_save
-    location.rename(old, new)
-  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\savelocation.py", line 447, in rename
-    l.rename(old, new)
-  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\savelocation.py", line 283, in rename
-    os.rename(old, new)
-WindowsError: [Error 32] Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird
+  File "renpy/common/00start.rpy", line 218, in script call
+    python:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "renpy/common/00start.rpy", line 85, in script call
+    python hide:
+  File "game/script.rpy", line 77, in script
+    "90% der Leute behaupten, es schmecke so, als würde man eine Eisenstange essen. Die anderen 10% finden es fruchtig und erfrischend."
+  File "C:\Users\cedi\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 604, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "C:\Users\cedi\Desktop\renpy-6.99.10-sdk\renpy\exports.py", line 1114, in say
+    what = what % tag_quoting_dict
+TypeError: %d format: a number is required, not TagQuotingDict
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.10.1227
