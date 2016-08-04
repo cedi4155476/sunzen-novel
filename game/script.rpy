@@ -50,7 +50,7 @@ label splashscreen:
     hide gnm
     with dissolve
     with Pause(1)
-
+ 
     return
     
 # Kapitel 1

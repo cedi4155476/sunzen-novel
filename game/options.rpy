@@ -220,10 +220,10 @@ init -1 python hide:
     config.main_game_transition = None
 
     ## Beim Zurückkehren zum Hauptmenü aus dem Spiel heraus.
-    config.game_main_transition = None
+    config.game_main_transition = dissolve
 
     ## Beim Aufrufen des Hauptmenüs vom "Splashscreen".
-    config.end_splash_transition = None
+    config.end_splash_transition = dissolve
 
     ## Beim Aufrufen des Hauptmenüs, nachdem das Spiel beendet wurde.
     config.end_game_transition = None
@@ -292,14 +292,22 @@ image main_menu:
 
     contains:
         "Herrenhaus_snzn.png"
+        xalign 1.0
+        linear 0.945 xalign 0.1
     contains:
-        "Schwert.png"
+        "Schwert_2.png"
+        alpha 0.0
+        linear 1.0 alpha 1.0
     contains:
         "Titel.png"
+        alpha 0.0
+        linear 1.0 alpha 1.0
     contains:
         Text("Konzeptspiel v." + config.version, size=18)
         yalign .02
         xalign .98
+        alpha 0.0
+        linear 2.0 alpha 1.0
 
 
     #########################################

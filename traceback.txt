@@ -1,40 +1,18 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 218, in script call
-    python:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "game/script.rpy", line 77, in script
-    "90% der Leute behaupten, es schmecke so, als würde man eine Eisenstange essen. Die anderen 10% finden es fruchtig und erfrischend."
-TypeError: %d format: a number is required, not TagQuotingDict
+ScriptError: could not find label '_library_main_menu'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 218, in script call
-    python:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "renpy/common/00start.rpy", line 85, in script call
-    python hide:
-  File "game/script.rpy", line 77, in script
-    "90% der Leute behaupten, es schmecke so, als würde man eine Eisenstange essen. Die anderen 10% finden es fruchtig und erfrischend."
-  File "C:\Users\cedi\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 604, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\Users\cedi\Desktop\renpy-6.99.10-sdk\renpy\exports.py", line 1114, in say
-    what = what % tag_quoting_dict
-TypeError: %d format: a number is required, not TagQuotingDict
+  File "lib/windows-i686/00start.rpyc", line 181, in script call
+  File "lib/windows-i686/script.rpyc", line 58, in script
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\ast.py", line 1520, in execute
+    rv = renpy.game.script.lookup(target)
+  File "D:\Gaanmastudios\Ren'Py\scoped_dir_5340_18659\renpy-6.99.10-sdk\renpy\script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label '_library_main_menu'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.10.1227

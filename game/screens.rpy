@@ -180,12 +180,13 @@ screen main_menu:
     # Der Hintergrund des Hauptmenüs.
     window:
         style "mm_root"
+        
 
     # Die Hauptmenü Schaltflächen.
     frame:
         style_group "mm"
         xalign .06
-        yalign .85
+        yalign .90
 
         has vbox
 
